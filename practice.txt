@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <button class="btn bg-primary text-white font-weight-bold btn-lg">click me</button>
+    <p> text</p>
+    <p class="text-primary">welcome to apponix</p>
+
+    <button type="button" class="btn btn-outline-primary">primary</button>
+
+    <div class="container-fluid bg-danger">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nostrum laudantium pariatur quis autem, architecto sequi, cum fuga dolor suscipit iure voluptatem quisquam reprehenderit ullam! Eveniet pariatur reprehenderit debitis? Veritatis!
+    </div>
+
+    <div class="container bg-primary">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nostrum laudantium pariatur quis autem, architecto sequi, cum fuga dolor suscipit iure voluptatem quisquam reprehenderit ullam! Eveniet pariatur reprehenderit debitis? Veritatis!
+        </div>
+
+    
+</body>
+</html>

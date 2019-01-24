@@ -1,0 +1,169 @@
+.navbar-nav li{
+    padding: 0px 20px;
+    
+}
+
+.content-bg{
+    background-image: url(images/a1.jpg);
+    padding: 280px 0px;
+    
+    min-height: 100%; 
+    min-width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.section-gap{
+    padding: 80px 0px;
+
+
+}
+.about-bg{
+    background-color: rgba(211, 209, 209, 1.00)
+}
+
+.abut-content p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.abut-content h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.skills
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    line-height: 250px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.portfoliolink
+{
+    position: relative;
+
+}
+.portlink{
+    position: absolute;
+    right: 50px;
+    bottom: 5px;
+    height: 50px;
+    width: 50px;
+    background: rgba(22, 18, 19, 0.3);
+    border-radius: 50%;
+    color: white;
+    line-height: 50px;
+}
+
+.portlink a{
+display: block;
+}
+
+
+/* bootsnipppet */
+
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+/* .contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+} */
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+.footer-gap{
+    padding: 30px 0px;
+}
+
+/* scroll to top */
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-text,.btn-custom,.skills-name  {
+        text-align:center;
+      }
+     #skills-name  {
+        text-align:center;
+        margin-left:18%;
+        
+      }
+    }
