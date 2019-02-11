@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="animate.css">
   <script src="animate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+
   <script>
     new WOW().init();
               </script>
@@ -25,8 +27,8 @@
 <body>
   <div class="container-fluid">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-primary fixed-top">
-        <a class="navbar-brand" href="#">hemanth rs</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <a class="navbar-brand wow pulse" href="#"><span class="badge badge-pill badge-success fa-1x ">Hemanth RS</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,22 +37,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" id="a2" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" id="a2" href="#home"><img src="images/home.png"> home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#abt">about me</a>
+              <a class="nav-link" href="#abt"><img src="images/about.png">about me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skill">skills</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#port">portfolio</a>
-
+              <a class="nav-link" href="#skill"><img src="images/skills.png">skills</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#foot">contact me</a>
+              <a class="nav-link" href="#port"><img src="images/portfolio.png">portfolio</a>
+
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#foot"><img src="images/contact.png">contact me</a>
             </li>
 
         </div>
@@ -64,36 +66,39 @@
   <div class="container-fluid content-bg" id="home">
     <div class="container">
 
-      <h1 class="text-center animated  slideInUp"> HELLO I AM HEMANTH</h1>
-      <p class="text-center">web developer, python programmer and data analyst</p>
-      <p class="text-center">
-        <i class="fa fa-facebook-square fa-2x ml-2" aria-hidden="true" style="color:#3b5998"></i>
+      <h1 class="text-right wow pulse"> HELLO I'M HEMANTH RS</h1>
+      <p class="text-right wow pulse">web developer, python programmer</p>
+      <p class="text-right wow lightSpeedIn data-wow-duration=" 1s" data-wow-delay="1s"">
+
+      <a href=" https://www.facebook.com/hemanth.shendye">
+        <i class="fa fa-facebook-square fa-2x ml-2" aria-hidden="true" style="color:#3b5998"></i></a>
         <i class="fa fa-twitter-square fa-2x ml-2" aria-hidden="true" style="color:#1DA1F2"></i>
-        <i class="fa fa-linkedin-square fa-2x ml-2" aria-hidden="true" style="color:#0077B5"></i>
+        <a href="https://www.linkedin.com/in/hemanthrs"> <i class="fa fa-linkedin-square fa-2x ml-2" aria-hidden="true"
+            style="color:#0077B5"></i></a>
         <i class="fa fa-youtube-square fa-2x ml-2" aria-hidden="true" style="color:#ff0000"></i>
       </p>
     </div>
   </div>
   <!--  -->
+  <div id="abt">
+    <div class="container-fluid section-gap about-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 about-content wow  lightSpeedIn">
+            <h2> Hello thats me!</h2>
+            <p>I'm 22 years old focused on brand identity, web design and front-end development. </p>
+            <p>Interested in learning new technologies and providing contribution to the IT field</p>
+            <p>Always ready to discuss anything related to my field</p>
+            <button type="button" class="btn-info"> Download Cv<a href="hemanth MG.pdf">
 
-  <div class="container-fluid section-gap about-bg" id="abt">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 about-content animated  slideInUp">
-          <h2> Hello thats me!</h2>
-          <p>I'm 22 years old focused on brand identity, web design and front-end development. </p>
-          <p>Interested in learning new technologies and providing contribution to the IT field</p>
-          <p>always ready to discuss anything related to my field</p>
-          <a href="hemanth MG.pdf" download="hemanthresume"><button type="button" class="btn btn-primary mt-4"
-              data-toggle="button" aria-pressed="false" autocomplete="off">
-              Download CV
-            </button></a>
-        </div>
+              </a></button>
+          </div>
 
 
-        <div class="col-md-6  wow slideInUp" data-wow-duration="2s" data-wow-delay="2s">
-          <img src="images/IMG_20181203_154051.jpg" alt="no photo" class="img-fluid img-thumbnail" />
-          <p class="text-center"><b>Hemanth RS-Web developer</b></p>
+          <div class="col-md-6  wow lightSpeedIn image " data-wow-duration="1s" data-wow-delay="1s">
+            <img src="images/IMG_20181203_154051.jpg" alt="profile photo" height="400" width="400" />
+
+          </div>
         </div>
       </div>
     </div>
@@ -101,149 +106,142 @@
 
 
   <div class="container-fluid section-gap " id="skill">
+
+    <h2 class="text-center mb-4"><span class="badge badge-danger fa-1x ">Skills </span> </h2>
     <div class="container">
-      <h2 class="text-center mb-4">Skills </h2>
-      <div class="row skills-name" id="skills-name">
-        <div class="col-md-3">
-          <div class="col-md-12">
+      <div class="row">
+        <div class="col-lg-4 skillname ">
 
-            <div class="shadow-sm mb-5 bg-light skills">HTML5</div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="col-md-12">
+          <img src="images/iconfinder_html5_294678.png" class="ml-5 mr-5" data-toggle="tooltip" data-placement="right"
+            title="Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages." />
+          <p class="text center"> HTML</p>
 
-            <div class="shadow-sm mb-5 bg-light skills">css3</div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="col-md-12">
-
-            <div class="shadow-sm mb-5 bg-light skills">Javascript</div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="col-md-12">
-
-            <div class="shadow-sm mb-5 bg-light skills">bootstrap</div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="col-md-12">
-
-            <div class="shadow-sm mb-5 bg-light skills">jquery</div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="col-md-12">
-
-            <div class="shadow-sm mb-5 bg-light skills">python</div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="col-md-12">
-
-            <div class="shadow-sm mb-5 bg-light skills">php</div>
-          </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="col-md-12">
+        <div class="col-lg-4 skillname">
 
-            <div class="shadow-sm mb-5 bg-light skills">mysql</div>
-          </div>
+          <img src="images/iconfinder_css3_294692.png" class="ml-5 mr-5" data-toggle="tooltip" data-placement="right"
+            title="Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web" />
+          <p class="text center"> CSS3</p>
+
+        </div>
+        <div class="col-lg-4 skillname">
+
+          <img src="images/iconfinder_code-programming-javascript-software-develop-command-language_652581.png" class="ml-5 mr-5"
+            data-toggle="tooltip" data-placement="right" title="Tooltip on right" />
+          <p class="text center"> Javascript </p>
+
         </div>
 
+        <div class="col-lg-4 skillname">
 
+          <img src="images/python.png" class="ml-5 mr-5" data-toggle="tooltip" data-placement="right" title="Tooltip on right" />
+          <p class="text center"> python</p>
+
+        </div>
+
+        <div class="col-lg-4 skillname">
+
+          <img src="images/bootstrap.png" class="ml-5 mr-5" data-toggle="tooltip" data-placement="right" title="Tooltip on right" />
+          <p class="text center"> Bootstrap</p>
+
+        </div>
+
+        <div class="col-lg-4 skillname">
+
+          <img src="images/jquery.png" class="ml-5 mr-5" data-toggle="tooltip" data-placement="right" title="Tooltip on right" />
+          <p class="text center"> Jquery</p>
+
+        </div>
 
       </div>
     </div>
-  </div>
-  <hr>
+    <hr>
 
-  <div class="container-fluid section-gap wow lightSpeedIn" id="port">
-    <div class="container">
-      <h2 class="text-center mb-4">portfolio </h2>
-      <div class="row text-center">
+    <div class="container-fluid section-gap wow lightSpeedIn" id="port">
+      <div class="container">
+        <h2 class="text-center mb-4"><span class="badge badge-danger  fa-1x ">Portfolio </span></h2>
+        <div class="row text-center">
 
-        <div class="col-md-4 portfoliolink">
-          <img src="images/a1.jpg" class="img-fluid img-thumbnail " />
-          <div class="portlink"><a href="#" class="text-light"><i class="fa fa-external-link-square " aria-hidden="true"></i></a></div>
-        </div>
-
-
-
-        <div class="col-md-4 portfoliolink">
-          <img src="images/a1.jpg" class="img-fluid img-thumbnail " />
-          <div class="portlink"><a href="#" class="text-light"><i class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
-        </div>
+          <div class="col-md-4 portfoliolink">
+            <img src="images/portfolio1.png" class="img-fluid img-thumbnail " />
+            <div class="portlink"><a href="http://hemanthrs.epizy.com/admin/index.php" class="text-light"><i class="fa fa-external-link-square "
+                  aria-hidden="true"></i></a></div>
+          </div>
 
 
-        <div class="col-md-4 portfoliolink">
-          <img src="images/a1.jpg" class="img-fluid img-thumbnail" />
-          <div class="portlink"><a href="#" class="text-light"><i class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+          <div class="col-md-4 portfoliolink">
+            <img src="images/portfolio2.png" class="img-fluid img-thumbnail " />
+            <div class="portlink"><a href="#" class="text-light"><i class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
+          </div>
 
 
-  <div class="container-fluid section-gap" id="foot">
-    <div class="container">
-      <h2 class="text-center mb-4">contact me </h2>
-      <div class="row text-center">
-        <div class="col-md-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.6600798865!2d77.35073573336324!3d12.954517008640543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1548138677916"
-            width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-
-        <div class="col-md-6 text-left">
-          <h4> Apponix Technologies Private Limited</h4><br><i class="fa fa-map-marker" aria-hidden="true"></i> #306,
-          10th Main, 46th Cross,<br> 4th Block Rajajinagar,<br>
-          Bangalore - 560010<br><br>
-
-          <i class="fa fa-phone-square" aria-hidden="true"></i>
-          +91 8050580888<br>
-          <i class="fa fa-envelope-open" aria-hidden="true"></i>
-          info@apponix.com<br>
+          <div class="col-md-4 portfoliolink">
+            <img src="images/a1.jpg" class="img-fluid img-thumbnail" />
+            <div class="portlink"><a href="#" class="text-light"><i class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+
+    <div class="container-fluid section-gap" id="foot">
+      <div class="container">
+        <h2 class="text-center mb-4"><span class="badge badge-danger  fa-1x ">Contact me </span> </h2>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7811697205107!2d77.51968751430391!3d12.921781619466973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e5380ddd91d%3A0xded10199785c2092!2sRaj+Residency!5e0!3m2!1sen!2sin!4v1549153354841"
+              width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-md-6 text-left">
+            <h4> Hemanth RS</h4><br><i class="fa fa-map-marker" aria-hidden="true"></i>
+            G chandrashekharan Road,<br> BEML complex Rajarajeshwari Nagar,<br>
+            Bangalore - 560010<br><br>
+
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            +91 7899531856<br>
+            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+            hemanthrs137@gmail.com<br>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
 
+    
   <div class="container contact-form">
 
-    <form method="post">
-      <h3> <i class="fa fa-envelope-open" aria-hidden="true"></i> Drop Us a Message</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-          </div>
-          <div class="form-group">
-            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-          </div>
-          <div class="form-group">
-            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-          </div>
-          <div class="form-group">
-            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-          </div>
-        </div>
+<form method="post" action="send.php">
+  <h3> <i class="fa fa-envelope-open" aria-hidden="true"></i> Drop me a Message</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Your Name *" value="" />
       </div>
-    </form>
+      <div class="form-group">
+        <input type="text" name="email" class="form-control" placeholder="Your Email *" value="" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="contact" class="form-control" placeholder="Your Phone Number *" value="" />
+      </div>
+      <div class="form-group">
+        <input type="submit" name="submit" class="btnContact" value="Send Message" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <textarea name="message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+      </div>
+    </div>
   </div>
-  </div>
-  <div class=" container-fluid  bg-dark text-white text-center footer-gap">
-    designed by <span class="text-info">Hemanth</span>
+</form>
+</div>
+  <div class=" container-fluid  bg-secondary text-black text-center footer-gap">
+    designed by <span class="text-black">Hemanth</span>
   </div>
 
 
